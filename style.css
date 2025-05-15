@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-120vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ? Circles CSS */
+.main-circle {
+  background-color: #6c4747;
+  width: 206px;
+  height: 206px;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: fall;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.main-circle:nth-child(1) {
+  animation-delay: 250ms;
+}
+
+.main-circle:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.circle-no-fill {
+  border: 1px solid #fff;
+  width: 296px;
+  height: 296px;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: fall;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* ? Navbar CSS */
+nav a {
+  animation-name: fall;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+nav a:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+nav a:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* ? Landing Section CSS */
+.main-rectangle {
+  transform: scale(0);
+  animation-name: pop;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+
+.main-rectangle:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+/* ? Achievements Section CSS */
+#achievements-section {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+}

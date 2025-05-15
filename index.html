@@ -1,13 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        hello world
-    </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-x-hidden bg-[#3F0809]">
+    <!-- Landing Section Start -->
+    <div
+      id="landing-section"
+      class="flex justify-center bg-[#582D2D] !p-[48px] h-[100vh] relative"
+    >
+      <span class="main-circle left-[-80px] top-[-80px]"></span>
+      <span class="circle-no-fill left-[-130px] top-[-130px]"></span>
+
+      <!-- Navbar Start -->
+      <nav
+        class="flex justify-center gap-x-[128px] font-semibold text-[24px] absolute z-50"
+      >
+        <a href="#">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#achievements-section">Achievement</a>
+      </nav>
+      <!-- Navbar End -->
+
+      <div class="main-section flex flex-col w-full p-[20px]">
+        <div
+          class="flex justify-between items-center self-center mt-[88px] w-full"
+        >
+          <div class="flex flex-col h-fit">
+            <h1 class="font-extrabold text-[72px]">
+              Hyyy I am <br />
+              Liviana Tio
+              <!-- Aku udah punya calon pacar! @melonsalju GitHub nya -->
+            </h1>
+            <p class="uppercase text-[32px]">coming soon</p>
+          </div>
+
+          <div class="relative top-[50px] left-[-70px]">
+            <span
+              class="main-rectangle w-[124px] h-[144px] bg-[#946465] rounded-[15px] shadow-sm absolute left-[-70px] top-[-50px]"
+            ></span>
+
+            <img
+              src="assets/main-image.jpg"
+              alt="Main Image"
+              class="w-[309px] h-[413px] rounded-[15px]"
+            />
+
+            <span
+              class="main-rectangle w-[124px] h-[144px] bg-[#946465] rounded-[15px] shadow-sm absolute right-[-70px] bottom-[-50px]"
+            ></span>
+          </div>
+        </div>
+
+        <div class="flex gap-x-[48px] items-center">
+          <a href="https://wa.me/085348135705?text=hello" class="flex items-center gap-x-[8px]">
+            <i class="ri-whatsapp-line text-[38px] text-[#946465]"></i>
+            <h1>WhatsApp</h1>
+          </a>
+
+          <a href="https://www.instagram.com/livianatio/#" class="flex items-center gap-x-[8px]">
+            <i class="ri-instagram-line text-[38px] text-[#946465]"></i>
+            <h1>Instagram</h1>
+          </a>
+
+          <a href="#" class="flex items-center gap-x-[8px]">
+            <i class="ri-linkedin-fill text-[38px] text-[#946465]"></i>
+            <h1>LinkedIn</h1>
+          </a>
+        </div>
+      </div>
+
+      <span class="main-circle right-[-120px] top-[-120px]"></span>
+    </div>
+    <!-- Landing Section Start -->
+
+    <!-- About Section Start -->
+    <div id="about-section" class="h-[100vh] relative">
+      <span class="main-circle left-[-100px] top-[-100px] -z-1"></span>
+      <span class="circle-no-fill left-[-150px] top-[-150px] -z-1"></span>
+
+      <div
+        class="flex flex-col w-full justify-center items-center h-full gap-y-[64px]"
+      >
+        <h1 class="font-semibold text-[72px]">About Me</h1>
+
+        <div class="flex gap-x-[48px] w-[55%] items-center">
+          <img
+            src="assets/main-image.jpg"
+            alt="Main Image"
+            class="w-[309px] h-[413px] rounded-[15px]"
+          />
+
+          <div class="flex flex-col gap-y-[24px]">
+            <p>
+              Halo aku Liviana Tio, biasanya di panggil Livi. Aku mahasiswi aktif di
+              Kampus Widyadharma Pontianak dan saat ini saya sedang menempuh 
+              pendidikan di semester 4. 
+              Saat ini aku berdomisili di Pontianak. 
+            </p>
+
+            <div class="flex gap-x-[24px]">
+              <p>Hobi : Belajar & Menonton</p>
+
+              <p>Status : Mahasiswi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="main-circle right-[-120px] bottom-[-120px] -z-1"></span>
+    </div>
+    <!-- About Section Start -->
+
+    <!-- Achievements Section Start -->
+    <div
+      id="achievements-section"
+      class="flex flex-col gap-y-[72px] justify-center items-center w-full min-h-fit bg-[#FFCCCD] relative pb-[72px] pt-[28px]"
+    >
+      <h1 class="font-semibold text-[72px]">My Achievements</h1>
+
+      <!-- Year Timeline Container Start -->
+      <div
+        class="flex opacity-[55%] w-full justify-center items-center gap-x-[24px]"
+      >
+        <hr class="w-[30%] border-none !h-[2px] text-[#000] bg-[#000]" />
+
+        <h1 class="text-[42px] font-regular">2025</h1>
+
+        <hr class="w-[30%] border-none !h-[2px] text-[#000] bg-[#000]" />
+      </div>
+      <!-- Year Timeline Container End -->
+
+      <!-- Achievement Cards Container Start -->
+      <div class="flex flex-col gap-y-[128px]">
+        <!-- Left Achievement Card Start -->
+        <div class="flex flex-col">
+          <h1 class="z-50 text-[42px] font-extrabold">Tim pemasaran <br>Widyadharma</h1>
+
+          <div class="flex justify-center w-full gap-x-[128px]">
+            <div class="relative">
+              <span
+                class="w-[124px] h-[144px] bg-[#E28B8D] rounded-[15px] shadow-sm absolute right-[-90px] top-[-50px]"
+              ></span>
+
+              <img
+                src="assets/achievement1.jpeg"
+                alt="Achievement Image"
+                class="w-[400px] h-[599px] rounded-[15px]"
+              />
+
+              <span
+                class="w-[124px] h-[144px] bg-[#E28B8D] rounded-[15px] shadow-sm absolute left-[-70px] bottom-[-50px]"
+              ></span>
+            </div>
+
+            <div class="flex flex-col w-fit gap-y-[56px] font-medium">
+              <p class="text-end w-[250px]">
+                Saya tergabung dalam tim pemasaran kampus Widyadharma sejak tahun pertama saya 
+                dikampus ini yaitu di tahun 2023 hingga saat ini. Setiap tahunnya kami melakukan 
+                pemasaran ke berbagai sekolah yang ada di Pontianak maupun diluar Pontianak.
+              </p>
+
+              <hr
+                class="w-[50px] border-none !h-[2px] text-[#582D2D] bg-[#582D2D] self-center"
+              />
+
+              <p class="text-start w-[250px]">
+                Di tim ini saya membantu dalam proses administrasi pendaftaran mahasiswa/i 
+                baru sekaligus menjadi marketing. Berdiskusi dan memberikan penjelasan kepada 
+                para orang tua murid dan siswa/i, serta ketelitian dalam mengurus data dan 
+                pembayaran menjadi kemampuan utama yang harus dimiliki.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Achievement Card End -->
+
+        <!-- Right Achievement Card Start -->
+        <div class="flex flex-col">
+          <h1 class="z-50 text-[42px] font-extrabold text-end">
+            Wakil Ketua KSPM
+          </h1>
+
+          <div class="flex justify-center w-full gap-x-[128px]">
+            <div class="flex flex-col w-fit gap-y-[56px] font-medium">
+              <p class="text-end w-[250px]">
+                Saya tergabung dalam tim KSPM (Kelompok Studi Pasar Modal) kampus 
+                Widyadharma sejak tahun pertama saya dikampus ini yaitu di tahun 2023 
+                hingga saat ini. Saya menjabat sebagai wakil ketua pada periode 2024/2025.
+              </p>
+
+              <hr
+                class="w-[50px] border-none !h-[2px] text-[#582D2D] bg-[#582D2D] self-center"
+              />
+
+              <p class="text-start w-[250px]">
+                Berkoordinasi dan memberikan arahan menjadi hal utama saya dalam
+                mengurus dan memastikan agar segala kegiatan berjalan dengan lancar.
+                Merealisasikan program kerja setahun yang telah disusun. 
+              </p>
+            </div>
+
+            <div class="relative">
+              <span
+                class="w-[124px] h-[144px] bg-[#E28B8D] rounded-[15px] shadow-sm absolute left-[-90px] top-[-50px]"
+              ></span>
+
+              <img
+                src="assets/achievement2.jpeg"
+                alt="Achievement Image"
+                class="w-[400px] h-[599px] rounded-[15px]"
+              />
+
+              <span
+                class="w-[124px] h-[144px] bg-[#E28B8D] rounded-[15px] shadow-sm absolute right-[-70px] bottom-[-50px]"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <!-- Achievement Card End -->
+      </div>
+      <!-- Achievement Cards Container End -->
+    </div>
+    <!-- Achievements Section End -->
+  </body>
 </html>
